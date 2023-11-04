@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React | LearnEveryDay</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="xxxxx">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/summary-pages/assets/css/0.styles.c813abd5.css" as="style"><link rel="preload" href="/summary-pages/assets/js/app.e77c0c2e.js" as="script"><link rel="preload" href="/summary-pages/assets/js/2.bf5bdc49.js" as="script"><link rel="preload" href="/summary-pages/assets/js/1.0d150d4b.js" as="script"><link rel="preload" href="/summary-pages/assets/js/50.83bf2df0.js" as="script"><link rel="prefetch" href="/summary-pages/assets/js/10.c36bfb08.js"><link rel="prefetch" href="/summary-pages/assets/js/100.b4f92dc6.js"><link rel="prefetch" href="/summary-pages/assets/js/101.1d33ed11.js"><link rel="prefetch" href="/summary-pages/assets/js/102.131f1b78.js"><link rel="prefetch" href="/summary-pages/assets/js/103.8221f421.js"><link rel="prefetch" href="/summary-pages/assets/js/104.d071a34a.js"><link rel="prefetch" href="/summary-pages/assets/js/105.20167d3a.js"><link rel="prefetch" href="/summary-pages/assets/js/106.88f99910.js"><link rel="prefetch" href="/summary-pages/assets/js/107.4b15b6dd.js"><link rel="prefetch" href="/summary-pages/assets/js/11.10837841.js"><link rel="prefetch" href="/summary-pages/assets/js/12.80b80bf7.js"><link rel="prefetch" href="/summary-pages/assets/js/13.f600f4fc.js"><link rel="prefetch" href="/summary-pages/assets/js/14.95aee6b3.js"><link rel="prefetch" href="/summary-pages/assets/js/15.382aeb06.js"><link rel="prefetch" href="/summary-pages/assets/js/16.8038ca0d.js"><link rel="prefetch" href="/summary-pages/assets/js/17.9bd91d14.js"><link rel="prefetch" href="/summary-pages/assets/js/18.ed87e536.js"><link rel="prefetch" href="/summary-pages/assets/js/19.eb1d2ccc.js"><link rel="prefetch" href="/summary-pages/assets/js/20.6a826202.js"><link rel="prefetch" href="/summary-pages/assets/js/21.b4ae3475.js"><link rel="prefetch" href="/summary-pages/assets/js/22.576dcde2.js"><link rel="prefetch" href="/summary-pages/assets/js/23.87d5bb54.js"><link rel="prefetch" href="/summary-pages/assets/js/24.9e55e76b.js"><link rel="prefetch" href="/summary-pages/assets/js/25.002eb70a.js"><link rel="prefetch" href="/summary-pages/assets/js/26.9ab57f62.js"><link rel="prefetch" href="/summary-pages/assets/js/27.0a802dc2.js"><link rel="prefetch" href="/summary-pages/assets/js/28.e5c2363b.js"><link rel="prefetch" href="/summary-pages/assets/js/29.996e9b40.js"><link rel="prefetch" href="/summary-pages/assets/js/3.20157ae5.js"><link rel="prefetch" href="/summary-pages/assets/js/30.7fbc906f.js"><link rel="prefetch" href="/summary-pages/assets/js/31.097b3f6d.js"><link rel="prefetch" href="/summary-pages/assets/js/32.aab6a1be.js"><link rel="prefetch" href="/summary-pages/assets/js/33.6d3dcd64.js"><link rel="prefetch" href="/summary-pages/assets/js/34.a8ce4ccb.js"><link rel="prefetch" href="/summary-pages/assets/js/35.52ce08cc.js"><link rel="prefetch" href="/summary-pages/assets/js/36.114e3954.js"><link rel="prefetch" href="/summary-pages/assets/js/37.36d6ffb1.js"><link rel="prefetch" href="/summary-pages/assets/js/38.fa9ab8e8.js"><link rel="prefetch" href="/summary-pages/assets/js/39.7287b653.js"><link rel="prefetch" href="/summary-pages/assets/js/4.aab776dd.js"><link rel="prefetch" href="/summary-pages/assets/js/40.f9db787c.js"><link rel="prefetch" href="/summary-pages/assets/js/41.2999a0d4.js"><link rel="prefetch" href="/summary-pages/assets/js/42.f8e2de43.js"><link rel="prefetch" href="/summary-pages/assets/js/43.33e0e36a.js"><link rel="prefetch" href="/summary-pages/assets/js/44.3fb6d943.js"><link rel="prefetch" href="/summary-pages/assets/js/45.207451fb.js"><link rel="prefetch" href="/summary-pages/assets/js/46.4636a08f.js"><link rel="prefetch" href="/summary-pages/assets/js/47.ba93120e.js"><link rel="prefetch" href="/summary-pages/assets/js/48.a4008ff5.js"><link rel="prefetch" href="/summary-pages/assets/js/49.58ef914d.js"><link rel="prefetch" href="/summary-pages/assets/js/5.2d50631a.js"><link rel="prefetch" href="/summary-pages/assets/js/51.4ba0d89b.js"><link rel="prefetch" href="/summary-pages/assets/js/52.7d8ed7e0.js"><link rel="prefetch" href="/summary-pages/assets/js/53.db474913.js"><link rel="prefetch" href="/summary-pages/assets/js/54.194dd478.js"><link rel="prefetch" href="/summary-pages/assets/js/55.04824f97.js"><link rel="prefetch" href="/summary-pages/assets/js/56.4760690b.js"><link rel="prefetch" href="/summary-pages/assets/js/57.e08b3354.js"><link rel="prefetch" href="/summary-pages/assets/js/58.e88cbf48.js"><link rel="prefetch" href="/summary-pages/assets/js/59.cb4612d0.js"><link rel="prefetch" href="/summary-pages/assets/js/6.674e2ad9.js"><link rel="prefetch" href="/summary-pages/assets/js/60.14141510.js"><link rel="prefetch" href="/summary-pages/assets/js/61.a94e2512.js"><link rel="prefetch" href="/summary-pages/assets/js/62.e5da0e51.js"><link rel="prefetch" href="/summary-pages/assets/js/63.616a19f7.js"><link rel="prefetch" href="/summary-pages/assets/js/64.1aac6f07.js"><link rel="prefetch" href="/summary-pages/assets/js/65.c0dcca66.js"><link rel="prefetch" href="/summary-pages/assets/js/66.a78a3bb3.js"><link rel="prefetch" href="/summary-pages/assets/js/67.363f8052.js"><link rel="prefetch" href="/summary-pages/assets/js/68.b33fb855.js"><link rel="prefetch" href="/summary-pages/assets/js/69.0ec13144.js"><link rel="prefetch" href="/summary-pages/assets/js/7.f1dd9a86.js"><link rel="prefetch" href="/summary-pages/assets/js/70.aebbe89a.js"><link rel="prefetch" href="/summary-pages/assets/js/71.4a9f4fb7.js"><link rel="prefetch" href="/summary-pages/assets/js/72.d7f1221b.js"><link rel="prefetch" href="/summary-pages/assets/js/73.8bf1a91f.js"><link rel="prefetch" href="/summary-pages/assets/js/74.363fe8d1.js"><link rel="prefetch" href="/summary-pages/assets/js/75.bdcc8aec.js"><link rel="prefetch" href="/summary-pages/assets/js/76.1415b588.js"><link rel="prefetch" href="/summary-pages/assets/js/77.2e8968b7.js"><link rel="prefetch" href="/summary-pages/assets/js/78.3bc2ef86.js"><link rel="prefetch" href="/summary-pages/assets/js/79.1009f291.js"><link rel="prefetch" href="/summary-pages/assets/js/80.7af2067c.js"><link rel="prefetch" href="/summary-pages/assets/js/81.38b72b1e.js"><link rel="prefetch" href="/summary-pages/assets/js/82.f656ec43.js"><link rel="prefetch" href="/summary-pages/assets/js/83.bbe067ef.js"><link rel="prefetch" href="/summary-pages/assets/js/84.7265fb3b.js"><link rel="prefetch" href="/summary-pages/assets/js/85.785ca0e4.js"><link rel="prefetch" href="/summary-pages/assets/js/86.d88ba992.js"><link rel="prefetch" href="/summary-pages/assets/js/87.5e16e932.js"><link rel="prefetch" href="/summary-pages/assets/js/88.60865d37.js"><link rel="prefetch" href="/summary-pages/assets/js/89.95405665.js"><link rel="prefetch" href="/summary-pages/assets/js/90.f97f1af9.js"><link rel="prefetch" href="/summary-pages/assets/js/91.7df918aa.js"><link rel="prefetch" href="/summary-pages/assets/js/92.2c462423.js"><link rel="prefetch" href="/summary-pages/assets/js/93.5c520537.js"><link rel="prefetch" href="/summary-pages/assets/js/94.9458c742.js"><link rel="prefetch" href="/summary-pages/assets/js/95.077a340c.js"><link rel="prefetch" href="/summary-pages/assets/js/96.f923a5d3.js"><link rel="prefetch" href="/summary-pages/assets/js/97.78d5ba0f.js"><link rel="prefetch" href="/summary-pages/assets/js/98.749c42f5.js"><link rel="prefetch" href="/summary-pages/assets/js/99.bb25a501.js"><link rel="prefetch" href="/summary-pages/assets/js/vendors~docsearch.271bc088.js">
+    <link rel="stylesheet" href="/summary-pages/assets/css/0.styles.c813abd5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/summary-pages/" class="home-link router-link-active"><!----> <span class="site-name">LearnEveryDay</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/summary-pages/me.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/summary-pages/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://gitee.com/lwq1229/summary" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/summary-pages/me.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/summary-pages/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://gitee.com/lwq1229/summary" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/summary-pages/JS/apply-call" class="sidebar-heading clickable"><span>JS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/summary-pages/React/React" class="sidebar-heading clickable open active"><span>React</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/summary-pages/React/React.html" aria-current="page" class="active sidebar-link">React</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#jsx简介" class="sidebar-link">JSX简介</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#元素渲染" class="sidebar-link">元素渲染</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#组件-props" class="sidebar-link">组件&amp;Props</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#state-生命周期" class="sidebar-link">State&amp;生命周期</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#事件处理" class="sidebar-link">事件处理</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#条件渲染" class="sidebar-link">条件渲染</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#表单" class="sidebar-link">表单</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#状态提升" class="sidebar-link">状态提升</a></li><li class="sidebar-sub-header"><a href="/summary-pages/React/React.html#组合" class="sidebar-link">组合</a></li></ul></li><li><a href="/summary-pages/React/chess.html" class="sidebar-link">井字棋</a></li><li><a href="/summary-pages/React/Hooks.html" class="sidebar-link">Hooks</a></li><li><a href="/summary-pages/React/childrenprops.html" class="sidebar-link">childrenprops</a></li><li><a href="/summary-pages/React/renderProps.html" class="sidebar-link">renderProps</a></li><li><a href="/summary-pages/React/表格行增删.html" class="sidebar-link">表格行增删</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/summary-pages/React/Ref与受控/Ref" class="sidebar-heading clickable"><span>Ref与受控</span> <span class="arrow right"></span></a> <!----></section></li></ul></section></li><li><a href="/summary-pages/BOM/BOM.html" class="sidebar-link">BOM</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/summary-pages/css/CSS" class="sidebar-heading clickable"><span>CSS</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/summary-pages/HTML/HTML.html" class="sidebar-link">HTML</a></li><li><a href="/summary-pages/trick/浏览器标签页间通信.html" class="sidebar-link">浏览器标签页间通信</a></li><li><a href="/summary-pages/实用方法/数组转树形.html" class="sidebar-link">实用方法</a></li><li><a href="/summary-pages/布局/flex布局.html" class="sidebar-link">布局</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/summary-pages/组件库/antd" class="sidebar-heading clickable"><span>组件库</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/summary-pages/日常总结/apply和call" class="sidebar-heading clickable"><span>日常总结</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/summary-pages/一些小坑/双滚动条" class="sidebar-heading clickable"><span>小坑总结</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react"><a href="#react" class="header-anchor">#</a> React</h1> <h2 id="jsx简介"><a href="#jsx简介" class="header-anchor">#</a> JSX简介</h2> <div class="language-react extra-class"><pre class="language-text"><code>const name = 'lwq';
+const element = &lt;h1&gt;Hello world，{name}&lt;/h1&gt;;
+const user = {
+    firstName:'harper';//对象属性的赋值使用冒号
+    lastName:'end'
+}; //it's all ok
+</code></pre></div><p>这样的标签语法既不是字符串也不是html，它被称之为JSX，是一个JavaScript的语法拓展，建议在React中配合使用JSX。</p> <p>在 JSX 语法中，你可以在大括号内放置任何有效的 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions" target="_blank" rel="noopener noreferrer">JavaScript 表达式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。例如，<code>2 + 2</code>，<code>user.firstName</code> 或 <code>formatName(user)</code> 都是有效的 JavaScript 表达式。</p> <div class="language-react extra-class"><pre class="language-text"><code>const element = (
+  &lt;h1&gt;
+    Hello, {formatName(user)}!
+  &lt;/h1&gt;
+);
+//这里 formatName是一个函数
+</code></pre></div><h2 id="元素渲染"><a href="#元素渲染" class="header-anchor">#</a> 元素渲染</h2> <p>html中有一处</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>我们称之为根dom节点，该节点的所有内容都会由React DOM管理</p> <p>想要把一个React元素渲染到根dom节点，只要把他们传入ReactDOM.render();</p> <div class="language-react extra-class"><pre class="language-text"><code>const element = &lt;h1&gt;hello&lt;/h1&gt;;
+ReactDOM.render(element, document.getElementById(&quot;root&quot;));
+</code></pre></div><h2 id="组件-props"><a href="#组件-props" class="header-anchor">#</a> 组件&amp;Props</h2> <h3 id="函数组件和class组件"><a href="#函数组件和class组件" class="header-anchor">#</a> 函数组件和class组件</h3> <p>组件名大写首字母</p> <p>1.定义组件最简单的方法就是编写js函数</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span> hello <span class="token punctuation">,</span> <span class="token punctuation">{</span>props<span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>该函数是一个有效的React组件，他接受唯一带有数据的props（代表属性）对象并返回一个React元素，这些就是函数组件，本质是一个函数</p> <p>2.使用ES6的class来定义组件</p> <div class="language-React extra-class"><pre class="language-text"><code>class Welcome extends React.Component{
+    ...
+    render(){
+        ...
+        return &lt;h1&gt; hwllo,{this.props.name}&lt;/h1&gt;;
+    }
+}
+</code></pre></div><h3 id="组件渲染"><a href="#组件渲染" class="header-anchor">#</a> 组件渲染</h3> <p>之前我们渲染的React元素都是DOM标签</p> <div class="language-html extra-class"><pre class="language-html"><code>const element = <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>;
+</code></pre></div><p>但，React元素也可以是自定义的组件</p> <div class="language-React extra-class"><pre class="language-text"><code>const element = &lt;Welcome name=&quot;Sara&quot; /&gt;;
+</code></pre></div><p><strong>当React元素为自定义组件时，它会将JSX所接受的属性(attributes)以及子组件转换为单个对象传递给组件，这个对象就是props</strong></p> <div class="language-react extra-class"><pre class="language-text"><code>function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+const element = &lt;Welcome name=&quot;Sara&quot; /&gt;;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+</code></pre></div><h3 id="组合组件"><a href="#组合组件" class="header-anchor">#</a> 组合组件</h3> <p>组件可以在其输出中引用其他组件。这就可以让我们用同一组件来抽象出任意层次的细节。按钮，表单，对话框，甚至整个屏幕的内容：在 React 应用程序中，这些通常都会以组件的形式表示。</p> <p>例如，我们可以创建一个可以多次渲染 <code>Welcome</code> 组件的 <code>App</code> 组件：</p> <div class="language-react extra-class"><pre class="language-text"><code>function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;Welcome name=&quot;Sara&quot; /&gt;
+      &lt;Welcome name=&quot;Cahal&quot; /&gt;
+      &lt;Welcome name=&quot;Edite&quot; /&gt;
+    &lt;/div&gt;
+  );
+}
+
+ReactDOM.render(
+  &lt;App /&gt;,
+  document.getElementById('root')
+);
+</code></pre></div><h3 id="提取组件"><a href="#提取组件" class="header-anchor">#</a> 提取组件</h3> <p>将组件拆分为小组件</p> <h2 id="state-生命周期"><a href="#state-生命周期" class="header-anchor">#</a> State&amp;生命周期</h2> <p>将函数组件转换为class组件</p> <p>通过以下五步将 <code>Clock</code> 的函数组件转成 class 组件：</p> <ol><li>创建一个同名的 <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">ES6 class<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，并且继承于 <code>React.Component</code>。</li> <li>添加一个空的 <code>render()</code> 方法。</li> <li>将函数体移动到 <code>render()</code> 方法之中。</li> <li>在 <code>render()</code> 方法中使用 <code>this.props</code> 替换 <code>props</code>。</li> <li>删除剩余的空函数声明。</li></ol> <h3 id="state的更新可能是异步的"><a href="#state的更新可能是异步的" class="header-anchor">#</a> state的更新可能是异步的</h3> <p>出于性能考虑，React 可能会把多个 <code>setState()</code> 调用合并成一个调用。</p> <p>因为 <code>this.props</code> 和 <code>this.state</code> 可能会异步更新，所以你不要依赖他们的值来更新下一个状态。</p> <p>例如，此代码可能会无法更新计数器：</p> <div class="language- extra-class"><pre class="language-text"><code>// Wrong
+this.setState({
+  counter: this.state.counter + this.props.increment,
+});
+</code></pre></div><p>要解决这个问题，可以让 <code>setState()</code> 接收一个函数而不是一个对象。这个函数用上一个 state 作为第一个参数，将此次更新被应用时的 props 做为第二个参数：</p> <div class="language- extra-class"><pre class="language-text"><code>// Correct
+this.setState((state, props) =&gt; ({
+  counter: state.counter + props.increment
+}));
+</code></pre></div><h2 id="事件处理"><a href="#事件处理" class="header-anchor">#</a> 事件处理</h2> <ul><li><p>React事件的命名采用小驼峰</p></li> <li><p>使用JSX语法时需要传入一个函数作为事件处理函数，而不是字符串</p> <p>例如传统的HTML</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onClick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value javascript language-javascript"><span class="token function">activeLasers</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>
+    Click Here
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>但，在React中</p> <div class="language-react extra-class"><pre class="language-text"><code>&lt;button onClick={activeLasers}&gt;
+	Click Here
+&lt;/button&gt;
+</code></pre></div></li></ul> <p>在React中另一个不同点时不能通过返回false来阻止默认行为。必须显示的使用preventDefault,例如传统的HTML阻止链接默认打开一个新页面，你可以这样</p> <div class="language-Html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value javascript language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'The link was clicked.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token keyword">return</span> <span class="token boolean">false</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>
+  Click me
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在React中可能时这样的</p> <div class="language-react extra-class"><pre class="language-text"><code>function ActionLink() {
+  function handleClick(e) {    e.preventDefault();    console.log('The link was clicked.');  }
+  return (
+    &lt;a href=&quot;#&quot; onClick={handleClick}&gt;      Click me
+    &lt;/a&gt;
+ );
+}
+</code></pre></div><p>在这里，<code>e</code> 是一个合成事件。React 根据 <a href="https://www.w3.org/TR/DOM-Level-3-Events/" target="_blank" rel="noopener noreferrer">W3C 规范<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>来定义这些合成事件，所以你不需要担心跨浏览器的兼容性问题。如果想了解更多，请查看 <a href="https://react.docschina.org/docs/events.html" target="_blank" rel="noopener noreferrer"><code>SyntheticEvent</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 参考指南。</p> <p>使用 React 时，你一般不需要使用 <code>addEventListener</code> 为已创建的 DOM 元素添加监听器。事实上，你只需要在该元素初始渲染的时候添加监听器即可。</p> <p>当你使用 <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes" target="_blank" rel="noopener noreferrer">ES6 class<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 语法定义一个组件的时候，通常的做法是将事件处理函数声明为 class 中的方法。例如，下面的 <code>Toggle</code> 组件会渲染一个让用户切换开关状态的按钮：</p> <p><strong>JavaScript函数中的this不是在函数声明的时候，而是在函数运行的时候定义的，React同样遵循JS这特性，所以组件方法的调用者不同会导致this不同</strong></p> <div class="language- extra-class"><pre class="language-text"><code>onClick={this.handleClick}的“调用者”为事件绑定，来源多样，所以我们想使用组件中的handleClick方法就必须在构造函数中绑定上下文
+</code></pre></div><div class="language-react extra-class"><pre class="language-text"><code>class Toggle extends React.Component {
+    //在构造函数中绑定handleClick方法的this指定
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+ // 为了在回调中使用 `this`，这个绑定是必不可少的 
+   this.handleClick = this.handleClick.bind(this); 
+  }
+
+  handleClick() {    this.setState(state =&gt; ({      isToggleOn: !state.isToggleOn    }));  }
+  render() {
+    return (
+      &lt;button onClick={this.handleClick}&gt;        {this.state.isToggleOn ? 'ON' : 'OFF'}
+      &lt;/button&gt;
+    );
+  }
+}
+
+ReactDOM.render(
+  &lt;Toggle /&gt;,
+  document.getElementById('root')
+);
+</code></pre></div><h2 id="条件渲染"><a href="#条件渲染" class="header-anchor">#</a> 条件渲染</h2> <p>React 中的条件渲染和 JavaScript 中的一样，使用 JavaScript 运算符 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank" rel="noopener noreferrer"><code>if</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 或者<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank" rel="noopener noreferrer">条件运算符<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>去创建元素来表现当前的状态，然后让 React 根据它们来更新 UI。</p> <div class="language-react extra-class"><pre class="language-text"><code>function BackGreeting(props){
+    return &lt;h1&gt;welcome back!&lt;/h1&gt;
+}
+
+function YGreeting(props){
+    return &lt;h1&gt; welcom young&lt;/h1&gt;
+}
+
+function Greeting(props){
+    const t = props.isLog;
+    if(t){
+        return &lt;BackGreeting/&gt;;
+    }
+    return &lt;YGreeting /&gt;;
+}
+
+ReactDOM.render(&lt;Greeting isLog={false} /&gt;, document.getElementById(&quot;root&quot;));
+</code></pre></div><h3 id="元素变量"><a href="#元素变量" class="header-anchor">#</a> 元素变量</h3> <p>你可以使用变量来储存元素。 它可以帮助你有条件地渲染组件的一部分，而其他的渲染部分并不会因此而改变。</p> <p>如下例，定义 let button，这个button变量用来储存React元素，并返回</p> <div class="language-react extra-class"><pre class="language-text"><code>class LoginControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.state = {isLoggedIn: false};
+  }
+
+  handleLoginClick() {
+    this.setState({isLoggedIn: true});
+  }
+
+  handleLogoutClick() {
+    this.setState({isLoggedIn: false});
+  }
+
+  render() {
+    const isLoggedIn = this.state.isLoggedIn;
+    let button;
+
+    if (isLoggedIn) {
+      button = &lt;LogoutButton onClick={this.handleLogoutClick} /&gt;;
+    } else {
+      button = &lt;LoginButton onClick={this.handleLoginClick} /&gt;;
+    }
+
+    return (
+      &lt;div&gt;
+        &lt;Greeting isLoggedIn={isLoggedIn} /&gt;
+        {button}
+      &lt;/div&gt;
+    );
+  }
+}
+
+function UserGreeting(props) {
+  return &lt;h1&gt;Welcome back!&lt;/h1&gt;;
+}
+
+function GuestGreeting(props) {
+  return &lt;h1&gt;Please sign up.&lt;/h1&gt;;
+}
+
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return &lt;UserGreeting /&gt;;
+  }
+  return &lt;GuestGreeting /&gt;;
+}
+
+function LoginButton(props) {
+  return (
+    &lt;button onClick={props.onClick}&gt;
+      Login
+    &lt;/button&gt;
+  );
+}
+
+function LogoutButton(props) {
+  return (
+    &lt;button onClick={props.onClick}&gt;
+      Logout
+    &lt;/button&gt;
+  );
+}
+
+ReactDOM.render(
+  &lt;LoginControl /&gt;,
+  document.getElementById('root')
+);
+
+</code></pre></div><h2 id="表单"><a href="#表单" class="header-anchor">#</a> 表单</h2> <p>在 React 里，HTML 表单元素的工作方式和其他的 DOM 元素有些不同，这是因为表单元素通常会保持一些内部的 state。例如这个纯 HTML 表单只接受一个名称</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">&gt;</span></span>
+    名字:
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>提交<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="受控组件"><a href="#受控组件" class="header-anchor">#</a> 受控组件</h3> <p>在 HTML 中，表单元素（如<code>&lt;input&gt;</code>、 <code>&lt;textarea&gt;</code> 和 <code>&lt;select&gt;</code>）之类的表单元素通常自己维护 state，并根据用户输入进行更新。而在 React 中，可变状态（mutable state）通常保存在组件的 state 属性中，并且只能通过使用 <a href="https://react.docschina.org/docs/react-component.html#setstate" target="_blank" rel="noopener noreferrer"><code>setState()</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>来更新。</p> <p>我们可以把两者结合起来，使 React 的 state 成为“唯一数据源”。渲染表单的 React 组件还控制着用户输入过程中表单发生的操作。被 React 以这种方式控制取值的表单输入元素就叫做“受控组件”。</p> <p>例如，如果我们想让前一个示例在提交时打印出名称，我们可以将表单写为受控组件：</p> <div class="language-react extra-class"><pre class="language-text"><code>class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {    this.setState({value: event.target.value});  }
+  handleSubmit(event) {
+    alert('提交的名字: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      &lt;form onSubmit={this.handleSubmit}&gt;
+        &lt;label&gt;
+          名字:
+          &lt;input type=&quot;text&quot; value={this.state.value} onChange={this.handleChange} /&gt;        &lt;/label&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;提交&quot; /&gt;
+      &lt;/form&gt;
+    );
+  }
+}
+</code></pre></div><h3 id="select标签"><a href="#select标签" class="header-anchor">#</a> select标签</h3> <p>在 HTML 中，<code>&lt;select&gt;</code> 创建下拉列表标签。例如，如下 HTML 创建了水果相关的下拉列表：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>grapefruit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>葡萄柚<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>lime<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>酸橙<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>coconut<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>椰子<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mango<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>芒果<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>请注意，由于 <code>selected</code> 属性的缘故，椰子选项默认被选中。**React 并不会使用 <code>selected</code> 属性，而是在根 <code>select</code> 标签上使用 <code>value</code> 属性。**这在受控组件中更便捷，因为您只需要在根标签中更新它。例如：</p> <div class="language-react extra-class"><pre class="language-text"><code>class FlavorForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: 'coconut'};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {    this.setState({value: event.target.value});  }
+  handleSubmit(event) {
+    alert('你喜欢的风味是: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      &lt;form onSubmit={this.handleSubmit}&gt;
+        &lt;label&gt;
+          选择你喜欢的风味:
+          &lt;select value={this.state.value} onChange={this.handleChange}&gt;            &lt;option value=&quot;grapefruit&quot;&gt;葡萄柚&lt;/option&gt;
+            &lt;option value=&quot;lime&quot;&gt;酸橙&lt;/option&gt;
+            &lt;option value=&quot;coconut&quot;&gt;椰子&lt;/option&gt;
+            &lt;option value=&quot;mango&quot;&gt;芒果&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/label&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;提交&quot; /&gt;
+      &lt;/form&gt;
+    );
+  }
+}
+</code></pre></div><h3 id="处理多个输入"><a href="#处理多个输入" class="header-anchor">#</a> 处理多个输入</h3> <p>当需要处理多个 <code>input</code> 元素时，我们可以给每个元素添加 <code>name</code> 属性，并让处理函数根据 <code>event.target.name</code> 的值选择要执行的操作。</p> <p>例如：</p> <div class="language-react extra-class"><pre class="language-text"><code>class Reservation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isGoing: true,
+      numberOfGuests: 2
+    };
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.name === 'isGoing' ? target.checked : target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value    });
+  }
+
+  render() {
+    return (
+      &lt;form&gt;
+        &lt;label&gt;
+          参与:
+          &lt;input
+            name=&quot;isGoing&quot;            type=&quot;checkbox&quot;
+            checked={this.state.isGoing}
+            onChange={this.handleInputChange} /&gt;
+        &lt;/label&gt;
+        &lt;br /&gt;
+        &lt;label&gt;
+          来宾人数:
+          &lt;input
+            name=&quot;numberOfGuests&quot;            type=&quot;number&quot;
+            value={this.state.numberOfGuests}
+            onChange={this.handleInputChange} /&gt;
+        &lt;/label&gt;
+      &lt;/form&gt;
+    );
+  }
+}
+</code></pre></div><h2 id="状态提升"><a href="#状态提升" class="header-anchor">#</a> 状态提升</h2> <p>在本节中，我们将创建一个用于计算水在给定温度下是否会沸腾的温度计算器。</p> <p>我们将从一个名为 <code>BoilingVerdict</code> 的组件开始，它接受 <code>celsius</code> 温度作为一个 prop，并据此打印出该温度是否足以将水煮沸的结果。</p> <div class="language-react extra-class"><pre class="language-text"><code>function BoilingVerdict(props) {
+  if (props.celsius &gt;= 100) {
+    return &lt;p&gt;The water would boil.&lt;/p&gt;;  }
+  return &lt;p&gt;The water would not boil.&lt;/p&gt;;}
+</code></pre></div><p>接下来, 我们创建一个名为 <code>Calculator</code> 的组件。它渲染一个用于输入温度的 <code>&lt;input&gt;</code>，并将其值保存在 <code>this.state.temperature</code> 中。</p> <p><strong>另外, 它根据当前输入值渲染 <code>BoilingVerdict</code> 组件。</strong></p> <div class="language-react extra-class"><pre class="language-text"><code>class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {temperature: ''};  }
+
+  handleChange(e) {
+    this.setState({temperature: e.target.value});  }
+
+  render() {
+    const temperature = this.state.temperature;    return (
+      &lt;fieldset&gt;
+        &lt;legend&gt;Enter temperature in Celsius:&lt;/legend&gt;
+        &lt;input          value={temperature}          onChange={this.handleChange} /&gt;        &lt;BoilingVerdict          celsius={parseFloat(temperature)} /&gt;      &lt;/fieldset&gt;
+    );
+  }
+}
+</code></pre></div><h3 id="添加第二个输入框"><a href="#添加第二个输入框" class="header-anchor">#</a> 添加第二个输入框</h3> <p>我们的新需求是，在已有摄氏温度输入框的基础上，我们提供华氏度的输入框，并保持两个输入框的数据同步。</p> <p>我们先从 <code>Calculator</code> 组件中抽离出 <code>TemperatureInput</code> 组件，然后为其添加一个新的 <code>scale</code> prop，它可以是 <code>&quot;c&quot;</code> 或是 <code>&quot;f&quot;</code>：</p> <div class="language-react extra-class"><pre class="language-text"><code>const scaleNames = {  c: 'Celsius',  f: 'Fahrenheit'};
+class TemperatureInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {temperature: ''};
+  }
+
+  handleChange(e) {
+    this.setState({temperature: e.target.value});
+  }
+
+  render() {
+    const temperature = this.state.temperature;
+    const scale = this.props.scale;    return (
+      &lt;fieldset&gt;
+        &lt;legend&gt;Enter temperature in {scaleNames[scale]}:&lt;/legend&gt;        &lt;input value={temperature}
+               onChange={this.handleChange} /&gt;
+      &lt;/fieldset&gt;
+    );
+  }
+}
+</code></pre></div><h4 id="js对象取值的两种方式"><a href="#js对象取值的两种方式" class="header-anchor">#</a> JS对象取值的两种方式</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">abc</span><span class="token operator">:</span><span class="token string">&quot;ss&quot;</span><span class="token punctuation">,</span><span class="token literal-property property">nn</span><span class="token operator">:</span><span class="token number">90</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> v1 <span class="token operator">=</span> obj<span class="token punctuation">.</span>abc<span class="token punctuation">;</span><span class="token comment">//使用点的方式</span>
+<span class="token keyword">var</span> v2 <span class="token operator">=</span> obj<span class="token punctuation">[</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//使用中括号的方式</span>
+</code></pre></div><p>在实际项目中一般使用点，会方便许多，但是<strong>如果key是变量的话就不能使用点了，js会理解变量为对象的key值，造成混淆</strong>，这是必须使用【】方式来获得对象key变量的值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> v3 <span class="token operator">=</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">//key是一个变量</span>
+</code></pre></div><p>我们现在可以修改 <code>Calculator</code> 组件让它<strong>渲染两个独立的温度输入框</strong>组件：</p> <div class="language-react extra-class"><pre class="language-text"><code>class Calculator extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;TemperatureInput scale=&quot;c&quot; /&gt;        &lt;TemperatureInput scale=&quot;f&quot; /&gt;      &lt;/div&gt;
+    );
+  }
+}
+</code></pre></div><p>我们现在有了两个输入框，但当你在其中一个输入温度时，另一个并不会更新。这与我们的要求相矛盾：我们希望让它们保持同步。</p> <p>另外，我们也不能通过 <code>Calculator</code> 组件展示 <code>BoilingVerdict</code> 组件的渲染结果。因为 <code>Calculator</code> 组件并不知道隐藏在 <code>TemperatureInput</code> 组件中的当前温度是摄氏度还是华氏度。</p> <h3 id="编写转换函数"><a href="#编写转换函数" class="header-anchor">#</a> 编写转换函数</h3> <div class="language-react extra-class"><pre class="language-text"><code>function toCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5 / 9;
+}
+
+function toFahrenheit(celsius) {
+  return (celsius * 9 / 5) + 32;
+}
+</code></pre></div><p>上述两个函数仅做数值转换。而我们将编写另一个函数，它接受字符串类型的 <code>temperature</code> 和转换函数作为参数并返回一个字符串。我们将使用它来依据一个输入框的值计算出另一个输入框的值。</p> <p>当输入 <code>temperature</code> 的值无效时，函数返回空字符串，反之，则返回保留三位小数并四舍五入后的转换结果：</p> <div class="language- extra-class"><pre class="language-text"><code>function tryConvert(temperature, convert) {
+  const input = parseFloat(temperature);
+  if (Number.isNaN(input)) {
+    return '';
+  }
+  const output = convert(input);
+  const rounded = Math.round(output * 1000) / 1000;
+  return rounded.toString();
+}
+</code></pre></div><p>例如，<code>tryConvert('abc', toCelsius)</code> 返回一个空字符串，而 <code>tryConvert('10.22', toFahrenheit)</code> 返回 <code>'50.396'</code>。</p> <h3 id="状态提升-2"><a href="#状态提升-2" class="header-anchor">#</a> 状态提升</h3> <p>到目前为止, 两个 <code>TemperatureInput</code> 组件均在各自内部的 state 中相互独立地保存着各自的数据。</p> <div class="language- extra-class"><pre class="language-text"><code>class TemperatureInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {temperature: ''};  }
+
+  handleChange(e) {
+    this.setState({temperature: e.target.value});  }
+
+  render() {
+    const temperature = this.state.temperature;    // ...  
+</code></pre></div><p>然而，我们希望两个输入框内的数值彼此能够同步。当我们更新摄氏度输入框内的数值时，华氏度输入框内应当显示转换后的华氏温度，反之亦然。</p> <p><strong>在 React 中，将多个组件中需要共享的 state 向上移动到它们的最近共同父组件中，便可实现共享 state。这就是所谓的“状态提升”。接下来，我们将 <code>TemperatureInput</code> 组件中的 state 移动至 <code>Calculator</code> 组件中去。</strong></p> <p>如果 <code>Calculator</code> 组件拥有了共享的 state，它将成为两个温度输入框中当前温度的“数据源”。它能够使得两个温度输入框的数值彼此保持一致。由于两个 <code>TemperatureInput</code> 组件的 props 均来自共同的父组件 <code>Calculator</code>，因此两个输入框中的内容将始终保持一致。</p> <p>让我们看看这是如何一步一步实现的。</p> <p>首先，我们将 <code>TemperatureInput</code> 组件中的 <code>this.state.temperature</code> 替换为 <code>this.props.temperature</code>。现在，我们先假定 <code>this.props.temperature</code> 已经存在，尽管将来我们需要通过 <code>Calculator</code> 组件将其传入：</p> <div class="language- extra-class"><pre class="language-text"><code>  render() {
+    // Before: const temperature = this.state.temperature;
+    const temperature = this.props.temperature;    // ...
+</code></pre></div><p>我们知道 <a href="https://react.docschina.org/docs/components-and-props.html#props-are-read-only" target="_blank" rel="noopener noreferrer">props 是只读的<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。当 <code>temperature</code> 存在于 <code>TemperatureInput</code> 组件的 state 中时，组件调用 <code>this.setState()</code> 便可修改它。然而，<code>temperature</code> 是由父组件传入的 prop，<code>TemperatureInput</code> 组件便失去了对它的控制权。</p> <p>在 React 中，这个问题通常是通过使用“受控组件”来解决的。与 DOM 中的 <code>&lt;input&gt;</code> 接受 <code>value</code> 和 <code>onChange</code> 一样，自定义的 <code>TemperatureInput</code> 组件接受 <code>temperature</code> 和 <code>onTemperatureChange</code> 这两个来自父组件 <code>Calculator</code> 的 props。</p> <p>现在，当 <code>TemperatureInput</code> 组件想更新温度时，需调用 <code>this.props.onTemperatureChange</code> 来更新它：</p> <div class="language- extra-class"><pre class="language-text"><code>  handleChange(e) {
+    // Before: this.setState({temperature: e.target.value});
+    this.props.onTemperatureChange(e.target.value);    // ...
+</code></pre></div><p><code>onTemperatureChange</code> 的 prop 和 <code>temperature</code> 的 prop 一样，均由父组件 <code>Calculator</code> 提供。它通过修改父组件自身的内部 state 来处理数据的变化，进而使用新的数值重新渲染两个输入框。我们将很快看到修改后的 <code>Calculator</code> 组件效果。</p> <p>在深入研究 <code>Calculator</code> 组件的变化之前，让我们回顾一下 <code>TemperatureInput</code> 组件的变化。我们移除组件自身的 state，通过使用 <code>this.props.temperature</code> 替代 <code>this.state.temperature</code> 来读取温度数据。当我们想要响应数据改变时，我们需要调用 <code>Calculator</code> 组件提供的 <code>this.props.onTemperatureChange()</code>，而不再使用 <code>this.setState()</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>class TemperatureInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+    this.props.onTemperatureChange(e.target.value);  }
+
+  render() {
+    const temperature = this.props.temperature;    const scale = this.props.scale;
+    return (
+      &lt;fieldset&gt;
+        &lt;legend&gt;Enter temperature in {scaleNames[scale]}:&lt;/legend&gt;
+        &lt;input value={temperature}
+               onChange={this.handleChange} /&gt;
+      &lt;/fieldset&gt;
+    );
+  }
+}
+</code></pre></div><p>现在，让我们把目光转向 <code>Calculator</code> 组件。</p> <p>我们会把当前输入的 <code>temperature</code> 和 <code>scale</code> 保存在组件内部的 state 中。这个 state 就是从两个输入框组件中“提升”而来的，并且它将用作两个输入框组件的共同“数据源”。这是我们为了渲染两个输入框所需要的所有数据的最小表示。</p> <p>例如，当我们在摄氏度输入框中键入 37 时，<code>Calculator</code> 组件中的 state 将会是：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  temperature: '37',
+  scale: 'c'
+}
+</code></pre></div><p>如果我们之后修改华氏度的输入框中的内容为 212 时，<code>Calculator</code> 组件中的 state 将会是：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  temperature: '212',
+  scale: 'f'
+}
+</code></pre></div><p>我们可以存储两个输入框中的值，但这并不是必要的。我们只需要存储最近修改的温度及其计量单位即可，根据当前的 <code>temperature</code> 和 <code>scale</code> 就可以计算出另一个输入框的值。</p> <p>由于两个输入框中的数值由同一个 state 计算而来，因此它们始终保持同步：</p> <div class="language-react extra-class"><pre class="language-text"><code>class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
+    this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
+    this.state = {temperature: '', scale: 'c'};  }
+
+  handleCelsiusChange(temperature) {
+    this.setState({scale: 'c', temperature});  }
+
+  handleFahrenheitChange(temperature) {
+    this.setState({scale: 'f', temperature});  }
+
+  render() {
+    const scale = this.state.scale;    const temperature = this.state.temperature;    const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;    const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
+    return (
+      &lt;div&gt;
+        &lt;TemperatureInput
+          scale=&quot;c&quot;
+          temperature={celsius}          onTemperatureChange={this.handleCelsiusChange} /&gt;        &lt;TemperatureInput
+          scale=&quot;f&quot;
+          temperature={fahrenheit}          onTemperatureChange={this.handleFahrenheitChange} /&gt;        &lt;BoilingVerdict
+          celsius={parseFloat(celsius)} /&gt;      &lt;/div&gt;
+    );
+  }
+}
+</code></pre></div><p>让我们来重新梳理一下当你对输入框内容进行编辑时会发生些什么：</p> <ul><li>React 会调用 DOM 中 <code>&lt;input&gt;</code> 的 <code>onChange</code> 方法。在本实例中，它是 <code>TemperatureInput</code> 组件的 <code>handleChange</code> 方法。</li> <li><code>TemperatureInput</code> 组件中的 <code>handleChange</code> 方法会调用 <code>this.props.onTemperatureChange()</code>，并传入新输入的值作为参数。其 props 诸如 <code>onTemperatureChange</code> 之类，均由父组件 <code>Calculator</code> 提供。</li> <li>起初渲染时，用于摄氏度输入的子组件 <code>TemperatureInput</code> 中的 <code>onTemperatureChange</code> 方法与 <code>Calculator</code> 组件中的 <code>handleCelsiusChange</code> 方法相同，而，用于华氏度输入的子组件 <code>TemperatureInput</code> 中的 <code>onTemperatureChange</code> 方法与 <code>Calculator</code> 组件中的 <code>handleFahrenheitChange</code> 方法相同。因此，无论哪个输入框被编辑都会调用 <code>Calculator</code> 组件中对应的方法。</li> <li>在这些方法内部，<code>Calculator</code> 组件通过使用新的输入值与当前输入框对应的温度计量单位来调用 <code>this.setState()</code> 进而请求 React 重新渲染自己本身。</li> <li>React 调用 <code>Calculator</code> 组件的 <code>render</code> 方法得到组件的 UI 呈现。温度转换在这时进行，两个输入框中的数值通过当前输入温度和其计量单位来重新计算获得。</li> <li>React 使用 <code>Calculator</code> 组件提供的新 props 分别调用两个 <code>TemperatureInput</code> 子组件的 <code>render</code> 方法来获取子组件的 UI 呈现。</li> <li>React 调用 <code>BoilingVerdict</code> 组件的 <code>render</code> 方法，并将摄氏温度值以组件 props 方式传入。</li> <li>React DOM 根据输入值匹配水是否沸腾，并将结果更新至 DOM。我们刚刚编辑的输入框接收其当前值，另一个输入框内容更新为转换后的温度值。</li></ul> <p>得益于每次的更新都经历相同的步骤，两个输入框的内容才能始终保持同步。</p> <h2 id="组合"><a href="#组合" class="header-anchor">#</a> 组合</h2> <h3 id="包含关系"><a href="#包含关系" class="header-anchor">#</a> 包含关系</h3> <p>有些组件无法提前知晓它们子组件的具体内容。在 <code>Sidebar</code>（侧边栏）和 <code>Dialog</code>（对话框）等展现通用容器（box）的组件中特别容易遇到这种情况。</p> <p>我们建议这些组件使用一个特殊的 <code>children</code> prop 来将他们的子组件传递到渲染结果中：</p> <div class="language-react extra-class"><pre class="language-text"><code>function FancyBorder(props) {
+  return (
+    &lt;div className={'FancyBorder FancyBorder-' + props.color}&gt;
+      {props.children}    &lt;/div&gt;
+  );
+}
+</code></pre></div><p>这使得别的组件可以通过 JSX 嵌套，将任意组件作为子组件传递给它们。</p> <div class="language-react extra-class"><pre class="language-text"><code>function WelcomeDialog() {
+  return (
+    &lt;FancyBorder color=&quot;blue&quot;&gt;
+      &lt;h1 className=&quot;Dialog-title&quot;&gt;        Welcome      &lt;/h1&gt;      &lt;p className=&quot;Dialog-message&quot;&gt;        Thank you for visiting our spacecraft!      &lt;/p&gt;    &lt;/FancyBorder&gt;
+  );
+}
+</code></pre></div><div class="language-react extra-class"><pre class="language-text"><code>function FancyBorder(props) {
+  return (
+    &lt;div&gt;
+   &lt;p&gt;颜色是{props.color}&lt;/p&gt;
+    {props.children}
+    &lt;/div&gt;
+  );
+}
+
+function WelcomeDialog() {
+  return (
+    &lt;FancyBorder color=&quot;blue&quot;&gt;
+      &lt;h1&gt;LiuwenqiangNB&lt;/h1&gt;
+    &lt;/FancyBorder&gt;
+  );
+}
+
+ReactDOM.render(
+  &lt;WelcomeDialog /&gt;,
+  document.getElementById('root')
+);
+</code></pre></div><p>可以看到在WelcomeDialog组件中,引用了FancyBorder组件，并且FancyBorder组件还有一个子组件</p><h1>LiuwenqiangNB</h1>，<p></p> <p>在FancyBorder组件中通过props.children使得他们渲染</p> <p><code>&lt;FancyBorder&gt;</code> JSX 标签中的所有内容都会作为一个 <code>children</code> prop 传递给 <code>FancyBorder</code> 组件。因为 <code>FancyBorder</code> 将 <code>{props.children}</code> 渲染在一个 <code>&lt;div&gt;</code> 中，被传递的这些子组件最终都会出现在输出结果中。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/summary-pages/JS/鼠标事件.html" class="prev">
+        鼠标事件
+      </a></span> <span class="next"><a href="/summary-pages/React/chess.html">
+        井字棋
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/summary-pages/assets/js/app.e77c0c2e.js" defer></script><script src="/summary-pages/assets/js/2.bf5bdc49.js" defer></script><script src="/summary-pages/assets/js/1.0d150d4b.js" defer></script><script src="/summary-pages/assets/js/50.83bf2df0.js" defer></script>
+  </body>
+</html>

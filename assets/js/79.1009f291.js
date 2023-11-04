@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[79],{364:function(t,s,e){"use strict";e.r(s);var n=e(10),r=Object(n.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[this._v("React的ref")]),this._v(" "),t("p",[this._v("通过ref调用子组件的方法")])])}),[],!1,null,null,null);s.default=r.exports}}]);
